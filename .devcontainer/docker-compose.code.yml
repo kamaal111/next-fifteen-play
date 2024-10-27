@@ -1,0 +1,9 @@
+services:
+  code:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    container_name: next-fifteen-play-code
+    volumes:
+      - ../..:/workspaces:cached
+    command: sleep infinity
